@@ -4,7 +4,7 @@ import axios from 'axios'
 import { ElMessage } from 'element-plus'
 import { Download, Plus, Refresh, ArrowDown, Warning } from '@element-plus/icons-vue'
 
-const apiBaseUrl = 'http://39.108.124.19:8000'
+const apiBaseUrl = 'http://127.0.0.1:8001'
 const activeTab = ref('orders')
 
 // ---- 工单管理 ----

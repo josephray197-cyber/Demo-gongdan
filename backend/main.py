@@ -535,7 +535,7 @@ async def upload_file(file: UploadFile = File(...)):
         file_object.write(file.file.read())
         
     # 返回可供访问的图片 URL
-    return {"url": f"http://39.108.124.19:8000/uploads/{new_filename}"}
+    return {"url": f"http://127.0.0.1:8001/uploads/{new_filename}"}
 
 @app.get("/orders/export")
 def export_orders(start_date: Optional[str] = None, end_date: Optional[str] = None, db: Session = Depends(get_db)):
